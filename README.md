@@ -14,19 +14,13 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
 
-Node Installation
-
-Node Name
-
-Your Node Name
-Port prefix
-
-156
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf Passage3D
 git clone https://github.com/envadiv/Passage3D
 cd Passage3D
 git checkout v2.4.0
+```
 
 # Build binary
 make install
