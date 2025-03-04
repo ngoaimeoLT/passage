@@ -22,8 +22,10 @@ cd Passage3D
 git checkout v2.4.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.passage/cosmovisor/genesis/bin
