@@ -27,9 +27,11 @@ git checkout v2.4.0
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.passage/cosmovisor/genesis/bin
 ln -s $HOME/.passage/cosmovisor/genesis $HOME/.passage/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which passage) $HOME/.passage/cosmovisor/genesis/bin
