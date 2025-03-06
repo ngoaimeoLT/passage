@@ -33,8 +33,10 @@ mkdir -p $HOME/.passage/cosmovisor/genesis/bin
 ln -s $HOME/.passage/cosmovisor/genesis $HOME/.passage/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which passage) $HOME/.passage/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 passage config chain-id passage-2
