@@ -38,10 +38,12 @@ ln -s $HOME/.passage/cosmovisor/genesis $HOME/.passage/cosmovisor/current -f
 cp $(which passage) $HOME/.passage/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 passage config chain-id passage-2
 passage config keyring-backend file
 passage config node tcp://localhost:15657
+```
 
 # Initialize the node
 passage init "Your Node Name" --chain-id passage-2
