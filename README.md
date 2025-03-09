@@ -45,8 +45,10 @@ passage config keyring-backend file
 passage config node tcp://localhost:15657
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 passage init "Your Node Name" --chain-id passage-2
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/passage/genesis.json > $HOME/.passage/config/genesis.json
