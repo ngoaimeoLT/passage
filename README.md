@@ -61,8 +61,10 @@ curl -L https://snapshots.nodejumper.io/passage/addrbook.json > $HOME/.passage/c
 sed -i -e 's|^seeds *=.*|seeds = "aebb8431609cb126a977592446f5de252d8b7fa1@104.236.201.138:26656,b6beabfb9309330944f44a1686742c2751748b83@5.161.47.163:26656,7a9a36630523f54c1a0d56fc01e0e153fd11a53d@167.235.24.145:26656,ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:15656,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:15656,ebc272824924ea1a27ea3183dd0b9ba713494f83@passage-mainnet-seed.autostake.com:26916,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,df949a46ae6529ae1e09b034b49716468d5cc7e9@seeds.stakerhouse.com:10556,2b238d2c05c47629e03608a6107e156fcb50344c@65.108.101.158:20556,526d07b882df4cb820a8b9df819e14532d1811b0@seed-passage.ibs.team:16666"|' $HOME/.passage/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.001upasg"|' $HOME/.passage/config/app.toml
+```
 
 # Set pruning
 sed -i \
