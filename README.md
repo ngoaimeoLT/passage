@@ -66,12 +66,14 @@ sed -i -e 's|^seeds *=.*|seeds = "aebb8431609cb126a977592446f5de252d8b7fa1@104.2
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.001upasg"|' $HOME/.passage/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.passage/config/app.toml
+```
 
 # Enable prometheus
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.passage/config/config.toml
