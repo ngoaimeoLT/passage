@@ -86,8 +86,10 @@ sed -i -e "s%:1317%:15617%; s%:8080%:15680%; s%:9090%:15690%; s%:9091%:15691%; s
 sed -i -e "s%:26658%:15658%; s%:26657%:15657%; s%:6060%:15660%; s%:26656%:15656%; s%:26660%:15661%" $HOME/.passage/config/config.toml
 ```
 
-# Download latest chain data snapshot
+**Download latest chain data snapshot**
+```
 curl "https://snapshots.nodejumper.io/passage/passage_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.passage"
+```
 
 # Install Cosmovisor
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
